@@ -1,21 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/navigation_home">
 
+    <!-- Home Fragment -->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.bank_app.ui.home.HomeFragment"
-        android:label="Tableau de bord" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Transactions Fragment -->
+    <fragment
+        android:id="@+id/navigation_transactions"
+        android:name="com.example.bank_app.ui.transactions.TransactionsFragment"
+        android:label="Transactions"
+        tools:layout="@layout/fragment_transactions" />
+
+    <!-- Cards Fragment -->
+    <fragment
+        android:id="@+id/navigation_cards"
+        android:name="com.example.bank_app.ui.cards.CardsFragment"
+        android:label="Cards"
+        tools:layout="@layout/fragment_cards" />
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.bank_app.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <!-- Send Money Fragment -->
 
     <fragment
-        android:id="@+id/navigation_transfer"
-        android:name="com.example.bank_app.ui.transfer.TransferFragment"
-        android:label="Virement" />
-
+        android:id="@+id/sendMoneyFragment"
+        android:name="com.example.bank_app.ui.home.SendMoneyFragment"
+        android:label="Send Money"
+        tools:layout="@layout/fragment_send_money" />
+    <!-- Notifications Fragment -->
     <fragment
-        android:id="@+id/navigation_alerts"
+        android:id="@+id/notificationsFragment"
         android:name="com.example.bank_app.ui.notifications.NotificationsFragment"
-        android:label="Notifications" />
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/requestMoneyFragment"
+        android:name="com.example.bank_app.ui.home.RequestMoneyFragment"
+        android:label="Request Money"
+        tools:layout="@layout/fragment_request_money" />
+    <fragment
+        android:id="@+id/incomePredictionFragment"
+        android:name="com.example.bank_app.ui.prediction.IncomePredictionFragment"
+        android:label="Income Prediction"
+        tools:layout="@layout/fragment_income_prediction" />
 </navigation>

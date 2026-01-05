@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">bankapp</string>
+    <string name="add_new_card">Add New Card</string>
 </resources>

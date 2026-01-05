@@ -15,28 +15,6 @@
         android:paddingEnd="20dp"
         android:paddingBottom="24dp">
 
-        <!-- Welcome Section -->
-        <TextView
-            android:id="@+id/welcomeText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Welcome back,"
-            android:textColor="@color/text_secondary"
-            android:textSize="16sp"
-            android:fontFamily="sans-serif"/>
-
-        <TextView
-            android:id="@+id/userName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="John Doe"
-            android:textColor="@color/text_primary"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-medium"/>
-
         <!-- Balance Card with Gradient -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -83,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="$12,543.00"
+                    android:text="DT 0.00"
                     android:textColor="@color/white"
                     android:textSize="40sp"
                     android:textStyle="bold"
@@ -139,6 +117,7 @@
 
             <!-- Send Money -->
             <LinearLayout
+                android:id="@+id/sendAction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -176,6 +155,7 @@
 
             <!-- Request Money -->
             <LinearLayout
+                android:id="@+id/requestAction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -211,8 +191,10 @@
                     android:fontFamily="sans-serif-medium"/>
             </LinearLayout>
 
-            <!-- Top Up -->
+            <!-- Find the topupAction LinearLayout and change it to: -->
+
             <LinearLayout
+                android:id="@+id/predictAction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -228,21 +210,21 @@
                     android:layout_height="56dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp"
-                    app:cardBackgroundColor="#FFF3E0">
+                    app:cardBackgroundColor="#E8F5FF">
 
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_topup"
-                        app:tint="@color/warning" />
+                        android:src="@drawable/ic_chart"
+                        app:tint="#2196F3" />
                 </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Top Up"
+                    android:text="Predict"
                     android:textColor="@color/text_primary"
                     android:textSize="12sp"
                     android:fontFamily="sans-serif-medium"/>
@@ -250,6 +232,7 @@
 
             <!-- More -->
             <LinearLayout
+                android:id="@+id/moreAction"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"

@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:title="Home"/>
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
     <item
         android:id="@+id/navigation_transactions"
-        android:icon="@drawable/ic_transfer"
-        android:title="Transactions"/>
+        android:icon="@drawable/ic_transactions"
+        android:title="Transactions"
+        app:showAsAction="ifRoom" />
+
     <item
         android:id="@+id/navigation_cards"
         android:icon="@drawable/ic_cards"
-        android:title="Cards"/>
+        android:title="Cards"
+        app:showAsAction="ifRoom" />
+
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_profile_outline"
-        android:title="Profile"/>
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
 </menu>
